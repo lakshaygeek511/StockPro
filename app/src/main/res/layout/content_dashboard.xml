@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/dashboardProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addProductFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            app:tint="@color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/reportLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/product_report_background"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/totalProductsCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:background="#E0F2FE"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/totalProductsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:background="@color/colorPrimary">
+
+                        <TextView
+                            android:id="@+id/productCountTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center_horizontal"
+                            android:text="134"
+                            android:textColor="@color/white"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center_horizontal"
+                            android:text="@string/total_products"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/totalValueCardView"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:background="#E0F2FE"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/totalValueLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/productValueTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center_horizontal"
+                            android:text="@string/sample_product_value"
+                            android:textColor="@color/white"
+                            android:textSize="35sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center_horizontal"
+                            android:text="@string/total_value"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/productListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/productListHeadingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:flow_verticalAlign="top"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_list"
+                        android:fontFamily="@font/lato_bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/productListRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    tools:listitem="@layout/product_row"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productListHeadingLayout" />
+
+                <include
+                    android:id="@+id/noDataLayout"
+                    layout="@layout/no_data_found_layout"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/productListHeadingLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">StockPro</string>
+    <string name="login_here">Login Here</string>
+    <string name="already_registered">Already Registered?</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="yamaha_motor_co_ltd">YAMAHA MOTOR CO. LTD</string>
+    <string name="sample_ein_ve00ym576">VE00YM576</string>
+    <string name="app_version">App 1.0v</string>
+
+    <string name="OpenDrawer">Open Navigation Drawer</string>
+    <string name="CloseDrawer">Close Navigation Drawer</string>
+    <string name="view_profile">View Profile</string>
+    <string name="aboutUs">AboutUs</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="login">Login</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="error_title">Error Title</string>
+    <string name="error_message">Error Message</string>
+    <string name="close">Close</string>
+    <string name="success_message">Success Message</string>
+    <string name="success">Success</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_username">Enter your Username</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+
+
+    <string name="Rs">Rs. </string>
+    <string name="qty">Quantity : </string>
+    <string name="total_products">Total Products</string>
+    <string name="total_value">Total Value</string>
+    <string name="update_product_details">Update Product Details</string>
+    <string name="add_product">Add Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="sample_delete_message">Delete Message</string>
+    <string name="full_app_name">StockPro: Smart Inventory Manager</string>
+    <string name="sample_price">Price : Rs. 45000</string>
+    <string name="sample_quantity">Quantity : 15</string>
+    <string name="sample_product_name">Product Name : Dell Laptop</string>
+    <string name="no_products_found">No Products Found!</string>
+    <string name="sample_product_value">10,223</string>
+    <string name="product_list">Product List</string>
+</resources>
